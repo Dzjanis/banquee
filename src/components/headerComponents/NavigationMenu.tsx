@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavigationMenu = () => {
   return (
-    <nav className='flex justify-between items-center w-[600px]'>
+    <nav className='flex justify-center items-center gap-4 w-auto'>
       <NavLink to='/' className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-gray-700')}>
         FrontPage
       </NavLink>
