@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-export const NavigationMenu = () => {
+export const HeaderNavigationMenu = () => {
   return (
     <div className='flex justify-between items-center w-2/3'>
       <Link to='/'>
@@ -19,7 +19,12 @@ export const NavigationMenu = () => {
           Compare
         </NavLink>
       </nav>
-      <button>ThemeToggle</button>
+      <div className='flex justify-center items-center gap-4'>
+        <button className='text-emerald-300 cursor-pointer'>Login</button>
+        <button className='flex w-auto h-auto bg-emerald-300 text-white cursor-pointer'>
+          <span className='px-1 py-1'>Open Account</span>
+        </button>
+      </div>
     </div>
   );
 };
