@@ -7,7 +7,7 @@ export const FrontPageFstFrame = () => {
   return (
     <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-white'>
       <div className='flex flex-col justify-center items-start px-6'>
-        <h3 className='text-xl font-semibold text-[100px]'>Baking starts here.</h3>
+        <h3 className='text-xl font-semibold text-[100px]'>Banking starts here.</h3>
         <p className='text-[24px]'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
         </p>
