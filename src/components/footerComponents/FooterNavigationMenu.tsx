@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 export const FooterNavigationMenu = () => {
   return (
     <>
-      <nav className='w-2/3 h-[300px] p-4 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
+      <nav className='w-3/4 h-[300px] p-4 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
         <Link to='/'>
           <img src='../../asets/banquee.png' alt='' />
         </Link>
@@ -24,9 +24,9 @@ export const FooterNavigationMenu = () => {
           </ul>
         </div>
         <div className=''>
-          <a className='font-bold' href=''>
+          <NavLink to='./blog' className='font-bold'>
             Blog
-          </a>
+          </NavLink>
           <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
             <li>
               <a href=''>Product</a>
