@@ -7,10 +7,70 @@ export const FooterNavigationMenu = () => {
         <Link to='/'>
           <img src='../../asets/banquee.png' alt='' />
         </Link>
-        <div className='bg-green-200'>About</div>
-        <div className='bg-green-200'>Blog</div>
-        <div className='bg-green-200'>Web Flow</div>
-        <div className='bg-green-200'>Social Media</div>
+        <div className=''>
+          <a className='font-bold' href=''>
+            About
+          </a>
+          <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
+            <li>
+              <a href=''>Features</a>
+            </li>
+            <li>
+              <a href=''>Pricing</a>
+            </li>
+            <li>
+              <a href=''>Support</a>
+            </li>
+          </ul>
+        </div>
+        <div className=''>
+          <a className='font-bold' href=''>
+            Blog
+          </a>
+          <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
+            <li>
+              <a href=''>Product</a>
+            </li>
+            <li>
+              <a href=''>Technology</a>
+            </li>
+            <li>
+              <a href=''>Crypto</a>
+            </li>
+          </ul>
+        </div>
+        <div className=''>
+          <a className='font-bold' href=''>
+            Web Flow
+          </a>
+          <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
+            <li>
+              <a href=''>Styleguide</a>
+            </li>
+            <li>
+              <a href=''>Licensing</a>
+            </li>
+            <li>
+              <a href=''>Changelog</a>
+            </li>
+          </ul>
+        </div>
+        <div className=''>
+          <a className='font-bold' href=''>
+            Social Media
+          </a>
+          <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
+            <li>
+              <a href=''>Twitter</a>
+            </li>
+            <li>
+              <a href=''>Facebook</a>
+            </li>
+            <li>
+              <a href=''>Instagram</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div></div>
     </>
