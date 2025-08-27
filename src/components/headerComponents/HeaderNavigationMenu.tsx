@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { OpenAccBtn } from '../../commons/OpenAccBtn';
+import { AppBtn } from '../../commons/AppBtn';
 
 export const HeaderNavigationMenu = () => {
   return (
@@ -21,10 +21,10 @@ export const HeaderNavigationMenu = () => {
         </NavLink>
       </nav>
       <div className='flex justify-center items-center gap-4'>
-        <Link to='/' className='text-emerald-300 cursor-pointer'>
+        <Link to='/registerPage' className='text-emerald-300 cursor-pointer'>
           Login
         </Link>
-        <OpenAccBtn />
+        <AppBtn text='OpenAccaunt' />
       </div>
     </div>
   );

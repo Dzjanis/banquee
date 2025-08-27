@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { FstFrameCheck } from './FstFrameCheck';
-import { OpenAccBtn } from '../../commons/OpenAccBtn';
+import { AppBtn } from '../../commons/AppBtn';
 
 export const FrontPageFstFrame = () => {
   return (
@@ -30,7 +30,7 @@ export const FrontPageFstFrame = () => {
           </li>
         </ul>
         <div className='flex justify-center items-center gap-4'>
-          <OpenAccBtn />
+          <AppBtn text='OpenAccaunt' />
           <Link to='/compare' className='text-emerald-300 cursor-pointer flex items-center gap-1'>
             Compare Cards <FiArrowRight />
           </Link>

@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HeaderView } from './components/headerComponents/HeaderView';
+import { Compare } from './pages/Compare';
+import { Features } from './pages/Features';
 import { FooterView } from './components/footerComponents/FooterView';
 import { FrontPage } from './pages/FrontPage';
-import { Features } from './pages/Features';
-import { Compare } from './pages/Compare';
+import { HeaderView } from './components/headerComponents/HeaderView';
 import { NotFound } from './pages/NotFound';
+import { RegisterPage } from './pages/RegisterPage';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
           <Route path='/' element={<FrontPage />} />
           <Route path='/features' element={<Features />} />
           <Route path='/compare' element={<Compare />} />
+          <Route path='/registerPage' element={<RegisterPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
