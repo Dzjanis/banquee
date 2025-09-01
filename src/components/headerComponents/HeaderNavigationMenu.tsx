@@ -5,7 +5,7 @@ import banqueeLogo from '../../assets/banquee.png';
 export const HeaderNavigationMenu = () => {
   return (
     <div className='flex justify-between items-center w-3/4'>
-      <Link to='/'>
+      <Link to='/Banquee'>
         <img src={banqueeLogo} alt='Banquee' />
       </Link>
       <nav className='flex justify-center items-center gap-4 w-auto font-custom'>

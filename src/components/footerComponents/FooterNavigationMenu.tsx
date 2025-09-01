@@ -5,7 +5,7 @@ export const FooterNavigationMenu = () => {
   return (
     <>
       <nav className='w-3/4 h-[300px] p-4 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
-        <Link to='/'>
+        <Link to='/Banquee'>
           <img src={banqueeLogo} alt='Banquee' />
         </Link>
         <div className=''>
