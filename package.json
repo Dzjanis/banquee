@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Dzjanis.github.io/ИМЯ_РЕПОЗИТОРИЯ",
+  "homepage": "https://Dzjanis.github.io/Banquee",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
