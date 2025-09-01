@@ -8,23 +8,29 @@ export const HeaderNavigationMenu = () => {
         <img src='../../asets/banquee.png' alt='' />
       </Link>
       <nav className='flex justify-center items-center gap-4 w-auto font-custom'>
-        <NavLink to='/Features' className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-gray-700')}>
+        <NavLink
+          to='/Features'
+          className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
           Features
         </NavLink>
 
-        <NavLink to='/Compare' className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-gray-700')}>
+        <NavLink
+          to='/Compare'
+          className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
           Compare
         </NavLink>
 
-        <NavLink to='/Blog' className={({ isActive }) => (isActive ? 'text-blue-500 font-bold' : 'text-gray-700')}>
+        <NavLink to='/Blog' className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
           Blog
         </NavLink>
       </nav>
       <div className='flex justify-center items-center gap-4'>
-        <Link to='/registerPage' className='text-emerald-300 cursor-pointer'>
+        <Link to='/loginPage' className='text-emerald-300 cursor-pointer'>
           Login
         </Link>
-        <AppBtn text='OpenAccaunt' />
+        <Link to='/registerPage'>
+          <AppBtn text='OpenAccaunt' />
+        </Link>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { FooterView } from './components/footerComponents/FooterView';
 import { FrontPage } from './pages/FrontPage';
 import { HeaderView } from './components/headerComponents/HeaderView';
 import { NotFound } from './pages/NotFound';
+import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
           <Route path='/' element={<FrontPage />} />
           <Route path='/features' element={<Features />} />
           <Route path='/compare' element={<Compare />} />
+          <Route path='/loginPage' element={<LoginPage />} />
           <Route path='/registerPage' element={<RegisterPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

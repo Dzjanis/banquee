@@ -1,3 +1,13 @@
+import { FeaturesPageFstFrame } from '../components/featuresPageComponent/featuresPageFstFrame';
+import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
+import { FeatureCardsFrame } from '../components/featuresPageComponent/featuresCardsFrame';
+
 export const Features = () => {
-  return <div className='flex justify-center items-center w-full bg-amber-100 h-[481px]'>it's a Features</div>;
+  return (
+    <div className='flex flex-col w-full justify-between items-center'>
+      <FeaturesPageFstFrame />
+      <FeatureCardsFrame />
+      <OneAppFrame />
+    </div>
+  );
 };

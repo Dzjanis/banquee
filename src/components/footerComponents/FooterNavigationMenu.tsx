@@ -13,7 +13,11 @@ export const FooterNavigationMenu = () => {
           </a>
           <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>
             <li>
-              <a href=''>Features</a>
+              <NavLink
+                to='/Features'
+                className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-400')}>
+                Features
+              </NavLink>
             </li>
             <li>
               <a href=''>Pricing</a>
@@ -24,7 +28,9 @@ export const FooterNavigationMenu = () => {
           </ul>
         </div>
         <div className=''>
-          <NavLink to='./blog' className='font-bold'>
+          <NavLink
+            to='/Blog'
+            className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700 font-bold')}>
             Blog
           </NavLink>
           <ul className=' flex flex-col justify-center items-start gap-4 py-8 text-gray-400'>

@@ -3,15 +3,19 @@ import { FiArrowRight } from 'react-icons/fi';
 import { FrameCheck } from '../../commons/FrameCheck';
 import { AppBtn } from '../../commons/AppBtn';
 
-export const FrontPageFstFrame = () => {
+export const OneAppFrame = () => {
   return (
-    <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-white'>
-      <div className='flex flex-col justify-center items-start px-6'>
-        <h2 className='font-semibold text-[100px]'>Banking starts here.</h2>
+    <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-emerald-200 rounded-2xl text-white'>
+      <div className='flex flex-col justify-center items-start px-6 py-12'>
+        <h3 className='font-semibold text-[80px]'>
+          One app. <br />
+          One banking.
+        </h3>
         <p className='text-[24px]'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna.
         </p>
-        <ul className='grid grid-cols-2 grid-rows-2 text-[18px] py-4'>
+        <ul className='grid grid-cols-2 grid-rows-2 text-[18px] py-4 gap-4'>
           <li className='flex justify-start items-center gap-4'>
             <FrameCheck />
             <p>Instant Transfer</p>
@@ -38,8 +42,8 @@ export const FrontPageFstFrame = () => {
           </Link>
         </div>
       </div>
-      <div className='flex items-center justify-center'>
-        <img src='../asets/cards.png' alt='Cards' className='h-full w-auto object-contain px-12'></img>
+      <div className='flex justify-center items-end'>
+        <img src='../asets/oneAppImg.png' alt='Cards' className='h-3/4 w-auto object-contain px-12'></img>
       </div>
     </div>
   );
