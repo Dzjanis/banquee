@@ -1,6 +1,6 @@
 import { ScnFrameCards } from './ScnFrameCards';
 
-export const FrontPageScnFrame = () => {
+export const ScnFrame = () => {
   return (
     <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-white'>
       <div className='flex flex-col justify-center items-start px-6'>

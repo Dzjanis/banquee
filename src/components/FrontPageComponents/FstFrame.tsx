@@ -3,7 +3,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { FrameCheck } from '../../commons/FrameCheck';
 import { AppBtn } from '../../commons/AppBtn';
 
-export const FrontPageFstFrame = () => {
+export const FstFrame = () => {
   return (
     <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-white'>
       <div className='flex flex-col justify-center items-start px-6'>
