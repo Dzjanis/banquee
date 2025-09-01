@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import { AppBtn } from '../../commons/AppBtn';
+import banqueeLogo from '../../assets/banquee.png';
 
 export const HeaderNavigationMenu = () => {
   return (
     <div className='flex justify-between items-center w-3/4'>
       <Link to='/'>
-        <img src='../../asets/banquee.png' alt='' />
+        <img src={banqueeLogo} alt='Banquee' />
       </Link>
       <nav className='flex justify-center items-center gap-4 w-auto font-custom'>
         <NavLink

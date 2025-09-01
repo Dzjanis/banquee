@@ -14,7 +14,7 @@ export function App() {
       <HeaderView />
       <main>
         <Routes>
-          <Route path='/' element={<FrontPage />} />
+          <Route path='/Banquee' element={<FrontPage />} />
           <Route path='/features' element={<Features />} />
           <Route path='/compare' element={<Compare />} />
           <Route path='/loginPage' element={<LoginPage />} />

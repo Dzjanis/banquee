@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { AppBtn } from '../../commons/AppBtn';
+import oneCard from '../../assets/cards2.png';
 
 export const FeaturesPageFstFrame = () => {
   return (
@@ -19,7 +20,7 @@ export const FeaturesPageFstFrame = () => {
         </div>
       </div>
       <div className='flex justify-between items-end w-3/4'>
-        <img src='../asets/cards2.png' className='h-full w-auto object-contain px-12' alt='CreditCard' />
+        <img src={oneCard} className='h-full w-auto object-contain px-12' alt='CreditCard' />
       </div>
     </div>
   );

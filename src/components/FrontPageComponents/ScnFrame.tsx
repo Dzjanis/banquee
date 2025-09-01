@@ -1,4 +1,5 @@
 import { ScnFrameCards } from './ScnFrameCards';
+import app from '../../assets/app.png';
 
 export const ScnFrame = () => {
   return (
@@ -8,7 +9,7 @@ export const ScnFrame = () => {
         <ScnFrameCards />
       </div>
       <div className='flex items-center justify-center'>
-        <img src='../asets/app.png' alt='Cards' className='h-full w-auto object-contain px-12'></img>
+        <img src={app} alt='Cards' className='h-full w-auto object-contain px-12'></img>
       </div>
     </div>
   );

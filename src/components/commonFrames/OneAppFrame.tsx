@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { FrameCheck } from '../../commons/FrameCheck';
 import { AppBtn } from '../../commons/AppBtn';
+import oneAppImg from '../../assets/oneAppImg.png';
 
 export const OneAppFrame = () => {
   return (
@@ -43,7 +44,7 @@ export const OneAppFrame = () => {
         </div>
       </div>
       <div className='flex justify-center items-end'>
-        <img src='../asets/oneAppImg.png' alt='Cards' className='h-3/4 w-auto object-contain'></img>
+        <img src={oneAppImg} alt='Cards' className='h-3/4 w-auto object-contain'></img>
       </div>
     </div>
   );

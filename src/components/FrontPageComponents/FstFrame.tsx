@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 import { FrameCheck } from '../../commons/FrameCheck';
 import { AppBtn } from '../../commons/AppBtn';
+import cards from '../../assets/cards.png';
 
 export const FstFrame = () => {
   return (
@@ -39,7 +40,7 @@ export const FstFrame = () => {
         </div>
       </div>
       <div className='flex items-center justify-center'>
-        <img src='../asets/cards.png' alt='Cards' className='h-full w-auto object-contain px-12'></img>
+        <img src={cards} alt='Cards' className='h-full w-auto object-contain px-12'></img>
       </div>
     </div>
   );

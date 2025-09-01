@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
+import banqueeLogo from '../../assets/banquee.png';
 
 export const FooterNavigationMenu = () => {
   return (
     <>
       <nav className='w-3/4 h-[300px] p-4 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
         <Link to='/'>
-          <img src='../../asets/banquee.png' alt='' />
+          <img src={banqueeLogo} alt='Banquee' />
         </Link>
         <div className=''>
           <a className='font-bold' href=''>

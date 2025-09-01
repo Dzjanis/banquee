@@ -1,10 +1,10 @@
+import featuresImg21 from '../assets/featuresImg21.png';
+import featuresImg22 from '../assets/featuresImg22.png';
+import featuresImg23 from '../assets/featuresImg23.png';
+import featuresImg24 from '../assets/featuresImg24.png';
+
 export const featuresData = {
-  img: [
-    '../asets/featuresImg21.png',
-    '../asets/featuresImg22.png',
-    '../asets/featuresImg23.png',
-    '../asets/featuresImg24.png',
-  ],
+  img: [featuresImg21, featuresImg22, featuresImg23, featuresImg24],
   name: ['Transactions', 'Cards', 'Advanced Statistics', 'Saving Accounts'],
   title: [
     'Send & receive money instantly',
