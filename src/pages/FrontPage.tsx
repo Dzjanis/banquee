@@ -1,5 +1,5 @@
-import { FrontPageFstFrame } from '../components/frontPageComponents/FrontPageFstFrame';
-import { FrontPageScnFrame } from '../components/frontPageComponents/FrontPageScnFrame';
+import { FrontPageFstFrame } from '../components/frontPageComponents/FstFrame';
+import { FrontPageScnFrame } from '../components/frontPageComponents/ScnFrame';
 import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
 
 export const FrontPage = () => {
