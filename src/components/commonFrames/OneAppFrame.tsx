@@ -6,7 +6,7 @@ import { AppBtn } from '../../commons/AppBtn';
 export const OneAppFrame = () => {
   return (
     <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-emerald-200 rounded-2xl text-white'>
-      <div className='flex flex-col justify-center items-start px-6 py-12'>
+      <div className='flex flex-col justify-center items-start px-6 py-20 gap-4'>
         <h3 className='font-semibold text-[80px]'>
           One app. <br />
           One banking.
@@ -43,7 +43,7 @@ export const OneAppFrame = () => {
         </div>
       </div>
       <div className='flex justify-center items-end'>
-        <img src='../asets/oneAppImg.png' alt='Cards' className='h-3/4 w-auto object-contain px-12'></img>
+        <img src='../asets/oneAppImg.png' alt='Cards' className='h-3/4 w-auto object-contain'></img>
       </div>
     </div>
   );
