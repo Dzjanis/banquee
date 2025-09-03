@@ -1,3 +1,9 @@
+import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
+
 export const Compare = () => {
-  return <div className='flex justify-center items-center w-full bg-amber-100 h-[481px]'>it's a Compare</div>;
+  return (
+    <div className='flex flex-col w-full justify-between items-center'>
+      <OneAppFrame />
+    </div>
+  );
 };

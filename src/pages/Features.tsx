@@ -1,6 +1,6 @@
 import { FeaturesPageFstFrame } from '../components/featuresPageComponent/featuresPageFstFrame';
-import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
 import { FeatureCardsFrame } from '../components/featuresPageComponent/featuresCardsFrame';
+import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
 
 export const Features = () => {
   return (

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { FiArrowRight } from 'react-icons/fi';
 import { FrameCheck } from '../../commons/FrameCheck';
-import { AppBtn } from '../../commons/AppBtn';
 import oneAppImg from '../../assets/oneAppImg.png';
+import AppStoreImg from '../../assets/AppStoreImg.png';
+import GoogleStoreImg from '../../assets/GoogleStoreImg.png';
 
 export const OneAppFrame = () => {
   return (
@@ -35,12 +35,12 @@ export const OneAppFrame = () => {
           </li>
         </ul>
         <div className='flex justify-center items-center gap-4'>
-          <Link to='/registerPage'>
-            <AppBtn text='OpenAccaunt' />
-          </Link>
-          <Link to='/compare' className='text-emerald-300 cursor-pointer flex items-center gap-1'>
-            Compare Cards <FiArrowRight />
-          </Link>
+          <a href='https://Apple.com' target='_blank' rel='noopener noreferrer'>
+            <img src={AppStoreImg} alt='AppStore' />
+          </a>
+          <a href='https://Play.google.com' target='_blank' rel='noopener noreferrer'>
+            <img src={GoogleStoreImg} alt='PlayMarket' />
+          </a>
         </div>
       </div>
       <div className='flex justify-center items-end'>
