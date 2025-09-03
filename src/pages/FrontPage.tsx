@@ -1,6 +1,7 @@
 import { FstFrame } from '../components/frontPageComponents/FstFrame';
 import { ScnFrame } from '../components/frontPageComponents/ScnFrame';
 import { OneAppFrame } from '../components/commonFrames/OneAppFrame';
+import { SupportSection } from '../components/commonFrames/SupportSection';
 
 export const FrontPage = () => {
   return (
@@ -8,6 +9,7 @@ export const FrontPage = () => {
       <FstFrame />
       <ScnFrame />
       <OneAppFrame />
+      <SupportSection />
     </div>
   );
 };

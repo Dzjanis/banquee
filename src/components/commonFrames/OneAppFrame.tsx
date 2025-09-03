@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FrameCheck } from '../../commons/FrameCheck';
 import oneAppImg from '../../assets/oneAppImg.png';
 import AppStoreImg from '../../assets/AppStoreImg.png';
