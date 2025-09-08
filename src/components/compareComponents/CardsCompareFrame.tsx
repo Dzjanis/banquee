@@ -1,4 +1,4 @@
-import { CardItem } from './cardItem';
+import { CardItem } from './CardItem';
 import { cardsCompareData } from '../../data/cardsCompareData';
 
 export const CardsCompareFrame = () => {
