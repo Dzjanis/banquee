@@ -1,4 +1,5 @@
 import { FaFileAlt, FaUndoAlt, FaWifi, FaAt } from 'react-icons/fa';
+import { FrameCheck } from '../../commons/FrameCheck';
 
 const iconMap = {
   file: FaFileAlt,
@@ -21,7 +22,18 @@ export const TableLine = ({ title, icon, text, value }: TableLineProps) => {
     <div className='grid grid-cols-4 w-3/4 h-auto'>
       <div className='flex justify-start items-center'>
         {IconComponent && <IconComponent className='text-green-500 text-xl' />}
+        <div className='flex flex-col justify-center items-center'>
+          <h4 className='text-md font-bold'>{title}</h4>
+          <p>{text}</p>
+        </div>
       </div>
+      {value.map((item, index) => {
+        return (
+          <div key={index} className='flex w-full justify-center items-center'>
+            {item === 'check' ? <FrameCheck /> : item}
+          </div>
+        );
+      })}
     </div>
   );
 };
