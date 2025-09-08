@@ -14,12 +14,12 @@ export function App() {
       <HeaderView />
       <main>
         <Routes>
-          <Route path='/banquee' element={<FrontPage />} />
-          <Route path='/features' element={<Features />} />
-          <Route path='/compare' element={<Compare />} />
-          <Route path='/loginPage' element={<LoginPage />} />
-          <Route path='/registerPage' element={<RegisterPage />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path="/" element={<FrontPage />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/loginPage" element={<LoginPage />} />
+          <Route path="/registerPage" element={<RegisterPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <FooterView />
