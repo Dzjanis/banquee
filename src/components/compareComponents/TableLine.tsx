@@ -1,12 +1,6 @@
-import { FaFileAlt, FaUndoAlt, FaWifi, FaAt } from 'react-icons/fa';
 import { FrameCheck } from '../../commons/FrameCheck';
-
-const iconMap = {
-  file: FaFileAlt,
-  undo: FaUndoAlt,
-  wifi: FaWifi,
-  at: FaAt,
-};
+import { IconRenderer } from './iconRenderer';
+import { iconMap } from '../../data/iconMap';
 
 type TableLineProps = {
   title: string;
@@ -16,15 +10,13 @@ type TableLineProps = {
 };
 
 export const TableLine = ({ title, icon, text, value }: TableLineProps) => {
-  const IconComponent = iconMap[icon];
-
   return (
-    <div className='grid grid-cols-4 w-3/4 h-auto'>
-      <div className='flex justify-start items-center'>
-        {IconComponent && <IconComponent className='text-green-500 text-xl' />}
-        <div className='flex flex-col justify-center items-center'>
-          <h4 className='text-md font-bold'>{title}</h4>
-          <p>{text}</p>
+    <div className='grid grid-cols-[1fr_1fr_1fr_1fr] w-full h-auto'>
+      <div className='grid grid-cols-[1fr_auto] gap-2'>
+        <IconRenderer iconKey={icon} />
+        <div className='flex flex-col justify-center items-start text-sm'>
+          <h4 className='font-bold'>{title}</h4>
+          <p className='whitespace-normal'>{text}</p>
         </div>
       </div>
       {value.map((item, index) => {
