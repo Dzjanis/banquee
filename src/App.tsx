@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { BlogPage } from './pages/BlogPage';
+import { BlogPage } from './components/frontPageComponents/PostSection';
 import { ComparePage } from './pages/ComparePage';
 import { Features } from './pages/Features';
 import { FooterView } from './components/footerComponents/FooterView';
