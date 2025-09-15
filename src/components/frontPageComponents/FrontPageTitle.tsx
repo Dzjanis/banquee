@@ -4,7 +4,7 @@ import { FrameCheck } from '../../commons/FrameCheck';
 import { AppBtn } from '../../commons/AppBtn';
 import cards from '../../assets/cards.png';
 
-export const FstFrame = () => {
+export const FrontPageTitle = () => {
   return (
     <div className='grid grid-cols-[3fr_2fr] w-3/4 bg-white'>
       <div className='flex flex-col justify-center items-start px-6'>

@@ -3,7 +3,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { AppBtn } from '../../commons/AppBtn';
 import oneCard from '../../assets/cards2.png';
 
-export const FeaturesPageFstFrame = () => {
+export const FeaturesTitle = () => {
   return (
     <div className='flex flex-col justify-between items-center w-full h-[598px] bg-emerald-100'>
       <div className='flex flex-col justify-center items-center gap-10 py-5'>
