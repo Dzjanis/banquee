@@ -3,7 +3,7 @@ import { IoMailUnreadOutline } from 'react-icons/io5';
 
 export const SupportSection = () => {
   return (
-    <div className='flex justify-between items-center text-white bg-emerald-200 rounded-xl w-2/3 p-10 gap-4 mb-30'>
+    <div className='flex justify-between items-center text-white bg-emerald-200 rounded-xl w-2/3 p-10 gap-4 my-6'>
       <div className='flex flex-col justify-start items-stretch'>
         <h2 className='text-3xl font-bold '>Still have a questions?</h2>
         <p className='text'>We are here to help.</p>
