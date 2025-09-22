@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Compare } from './pages/Compare';
+import { BlogPage } from './pages/BlogPage';
+import { ComparePage } from './pages/ComparePage';
 import { Features } from './pages/Features';
 import { FooterView } from './components/footerComponents/FooterView';
 import { FrontPage } from './pages/FrontPage';
@@ -7,6 +8,7 @@ import { HeaderView } from './components/headerComponents/HeaderView';
 import { NotFound } from './pages/NotFound';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
+import { SupportPage } from './pages/SupportPage';
 
 export function App() {
   return (
@@ -14,9 +16,11 @@ export function App() {
       <HeaderView />
       <main>
         <Routes>
-          <Route path='/banquee' element={<FrontPage />} />
+          <Route path='/' element={<FrontPage />} />
           <Route path='/features' element={<Features />} />
-          <Route path='/compare' element={<Compare />} />
+          <Route path='/compare' element={<ComparePage />} />
+          <Route path='/support' element={<SupportPage />} />
+          <Route path='/blog' element={<BlogPage />} />
           <Route path='/loginPage' element={<LoginPage />} />
           <Route path='/registerPage' element={<RegisterPage />} />
           <Route path='*' element={<NotFound />} />

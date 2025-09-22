@@ -3,9 +3,9 @@ import banqueeLogo from '../../assets/banquee.png';
 
 export const FooterNavigationMenu = () => {
   return (
-    <>
-      <nav className='w-3/4 h-[300px] p-4 grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
-        <Link to='/banquee'>
+    <div className='w-full flex justify-center items-center'>
+      <nav className='w-3/4 h-[300px] grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-4'>
+        <Link to='/'>
           <img src={banqueeLogo} alt='Banquee' />
         </Link>
         <div className=''>
@@ -24,7 +24,11 @@ export const FooterNavigationMenu = () => {
               <a href=''>Pricing</a>
             </li>
             <li>
-              <a href=''>Support</a>
+              <NavLink
+                to='/Support'
+                className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-400')}>
+                Support
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -79,7 +83,6 @@ export const FooterNavigationMenu = () => {
           </ul>
         </div>
       </nav>
-      <div></div>
-    </>
+    </div>
   );
 };

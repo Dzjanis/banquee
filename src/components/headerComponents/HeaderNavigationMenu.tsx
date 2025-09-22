@@ -5,7 +5,7 @@ import banqueeLogo from '../../assets/banquee.png';
 export const HeaderNavigationMenu = () => {
   return (
     <div className='flex justify-between items-center w-3/4'>
-      <Link to='/banquee'>
+      <Link to='/'>
         <img src={banqueeLogo} alt='Banquee' />
       </Link>
       <nav className='flex justify-center items-center gap-4 w-auto font-custom'>
@@ -19,6 +19,12 @@ export const HeaderNavigationMenu = () => {
           to='/Compare'
           className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
           Compare
+        </NavLink>
+
+        <NavLink
+          to='/Support'
+          className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
+          Support
         </NavLink>
 
         <NavLink to='/Blog' className={({ isActive }) => (isActive ? 'text-emerald-300 font-bold' : 'text-gray-700')}>
